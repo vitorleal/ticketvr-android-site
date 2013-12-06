@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport"              content="width=device-width">
+
+        <meta property="og:site_name"      content="{{ site.name }}">
+        <meta property="og:title"          content="{{ site.description }}">
+        <meta property="og:url"            content="http://www.ticketvrapp.com">
+        <meta property="og:type"           content="site">
+        <meta property="og:imagem"         content="/img/logo.png">
+
+        <title>{{ page.title }}</title>
+
+        <link rel="stylesheet"    href="/css/main.css">
+        <link rel="shortcut icon" href="/img/favicon.png">
+    </head>
+
+    <body>
+        {% include header.html %}
+
+        <div class="container site privacy">
+          {{ content }}
+        </div>
+    </body>
+</html>
+

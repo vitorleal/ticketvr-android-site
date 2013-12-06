@@ -1,0 +1,158 @@
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+html, body {
+  background: url(../img/bgimg.jpg) no-repeat;
+  background-size: cover;
+  color: rgb(0, 0, 61);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 18px Helvetica, Arial, sans-serif;
+  line-height: 1.4em;
+}
+
+h1, h2, h3, h4, h5, h6 { font-size: 2.2em; line-height: 1.2em; }
+
+h1 { margin: 0 0 .8em 0; }
+p { margin: 1em 0; }
+
+a         { color: rgb(227, 30, 38); }
+a:hover   { text-decoration: none; }
+a:visited { color: rgb(227, 30, 38); }
+
+.pr { position: relative; }
+
+hr {
+  border: none;
+  border-top: solid 1px rgb(228, 228, 228);
+  margin: 30px 0;
+}
+
+::selection {
+	background: rgb(227, 30, 38);
+	color: rgb(255, 255, 255);
+	}
+::-moz-selection {
+	background: rgb(227, 30, 38);
+	color: rgb(25, 255, 255);
+}
+
+/*****************************************************************************/
+/*
+/* Home
+/*
+/*****************************************************************************/
+.header {
+  padding: 30px;
+}
+
+/* Logo */
+.logo {
+  background: url(../img/logo.png) no-repeat;
+  display: inline-block;
+  height: 100px;
+  text-indent: -100%;
+  vertical-align: top;
+  overflow: hidden;
+  width: 100px;
+}
+
+.logo-title {
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  font-size: 3.2em;
+  line-height: 1.7em;
+  margin: 0 0 0 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+}
+
+/* Main */
+.container {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.site {
+  background: rgb(255, 255, 255);
+  box-shadow: -2px 2px 12px rgba(0, 0, 0, .6);
+  border-top: solid 7px rgb(227, 30, 38);
+  height: 330px;
+  padding: 50px 40px;
+}
+
+.privacy {
+  height: auto;
+}
+
+.content {
+  width: 430px;
+}
+
+.google-play {
+  display: block;
+  margin: 30px 0;
+}
+
+/* Nexus and App */
+.nexus {
+  background: url(../img/nexus-5.png) no-repeat left top;
+  height: 690px;
+  right: -20px;
+  top: -210px;
+  position: absolute;
+  width: 420px;
+}
+
+.app {
+  background: url(../img/app.jpg) no-repeat;
+  background-position: 0 0;
+  height: 475px;
+  position: absolute;
+  width: 302px;
+  right: 38px;
+  top: 96px;
+  -webkit-transition: background 1s;
+     -moz-transition: background 1s;
+       -o-transition: background 1s;
+          transition: background 1s;
+}
+
+
+/* transition */
+.slide  { background-position: 0 0;       }
+.slide2 { background-position: -302px  0; }
+.slide3 { background-position: -604px  0; }
+.slide4 { background-position: -906px  0; }
+.slide5 { background-position: -1207px 0; }
+.slide6 { background-position: -1509px 0; }
+
+
+/* Media queries */
+@media only screen
+and (min-width : 320px)
+and (max-width : 900px) {
+  html {
+    width: 100%;
+  }
+  .container,
+  .content {
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+  }
+
+  .site {
+    height: auto;
+  }
+
+  .nexus {
+    display: none;
+  }
+}
+
