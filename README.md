@@ -5,6 +5,9 @@ The site is hosted in [Heroku](http://heroku.com/).
 #Download the app
 You can download the app in the [Play Store](https://play.google.com/store/apps/details?id=com.vleal.ticketvr)
 
+#Visit the site
+[http://www.ticketvrapp.com/](http://www.ticketvrapp.com/)
+
 #Author
 | [![twitter/vitorleal](http://gravatar.com/avatar/e133221d7fbc0dee159dca127d2f6f00?s=80)](http://twitter.com/vitorleal "Follow @vitorleal on Twitter") |
 |---|
